@@ -1,0 +1,35 @@
+/* line 4, ../sass/javascript-tab.scss */
+.tab li {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #999;
+  cursor: pointer;
+}
+/* line 13, ../sass/javascript-tab.scss */
+.tab li.active {
+  background: #00ab00;
+  cursor: auto;
+}
+
+/* line 20, ../sass/javascript-tab.scss */
+.tab-section li {
+  display: block;
+  opacity: 0;
+  width: 766px;
+  height: 0;
+  text-align: center;
+  line-height: 150px;
+  background: #00ab00;
+}
+/* line 29, ../sass/javascript-tab.scss */
+.tab-section li.active {
+  height: auto;
+  opacity: 1;
+  -moz-transition: opacity, ease-out 0.5s;
+  -o-transition: opacity, ease-out 0.5s;
+  -webkit-transition: opacity, ease-out 0.5s;
+  transition: opacity, ease-out 0.5s;
+}
